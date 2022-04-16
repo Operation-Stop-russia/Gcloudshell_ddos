@@ -4,13 +4,13 @@ apt-get update -y
 #apt-get upgrade -y
 #apt-get install -y tmux wget python3 python3-pip gcc python3-dev rustc
 #apt-get upgrade -y tmux wget python3 python3-pip gcc python3-dev rustc
-pip3 install --upgrade pip
+pip install --upgrade pip
 
 cd ~
 
 git clone https://github.com/porthole-ascend-cinnamon/mhddos_proxy.git
 cd mhddos_proxy
-python3 -m pip3 install -r requirements.txt
+python3 -m pip install -r requirements.txt
 
 tmux new-session -s dualshell
 sleep 0.1
