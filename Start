@@ -1,9 +1,9 @@
 #!/bin/bash
 #curl -l https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos/main/Start | bash
 apt-get update -y
-apt-get upgrade -y
+#apt-get upgrade -y
 apt-get install -y tmux wget python3 python3-pip gcc python3-dev rustc
-apt-get upgrade -y tmux wget python3 python3-pip gcc python3-dev rustc
+#apt-get upgrade -y tmux wget python3 python3-pip gcc python3-dev rustc
 pip install --upgrade pip
 
 tmux kill-session -t dualshell; pkill node
