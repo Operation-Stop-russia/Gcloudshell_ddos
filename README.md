@@ -29,7 +29,7 @@ curl -l https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos
 
 https://raw.githubusercontent.com/Operation-Stop-russia/targets_lists/main/L7m.lst
 
-https://raw.githubusercontent.com/Operation-Stop-russia/targets_lists/main/L4.lst
+https://raw.githubusercontent.com/Operation-Stop-russia/targets_lists/main/L4t.lst
 
 #
 IT ARMY of Ukraine
