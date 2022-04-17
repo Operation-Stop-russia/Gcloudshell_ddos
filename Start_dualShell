@@ -1,5 +1,5 @@
 #!/bin/bash
-#curl -l https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos/main/Start_dual | bash
+#curl -l https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos/main/Start_dualShell | bash
 
 #tmux kill-session -t dualshell; pkill node
 #rm -rf dualshell
