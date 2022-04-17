@@ -1,10 +1,8 @@
 #!/bin/bash
 #curl -l https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos/main/Start_dualShell.sh | bash
 
-#tmux kill-session -t dualshell; pkill node
-#rm -rf dualshell
-mkdir dualshell
-cd dualshell
+#mkdir dualshell
+#cd dualshell
 
 grep -qxF 'set -g mouse on' ~/.tmux.conf || echo 'set -g mouse on' >> ~/.tmux.conf
 tmux source-file ~/.tmux.conf
