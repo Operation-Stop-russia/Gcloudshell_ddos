@@ -1,4 +1,6 @@
 #!/bin/bash
+cd ~
+cd dualshell
 cd mhddos_proxy
 
 threads="${1:-1200}"; threads="-t $threads"
