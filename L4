@@ -1,5 +1,5 @@
 #!/bin/bash
-cd mhddos_proxy
+cd dualshell/mhddos_proxy
 
 threads="${1:-1200}"; threads="-t $threads"
 rpc="--rpc 1000"
