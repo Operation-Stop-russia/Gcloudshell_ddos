@@ -7,7 +7,7 @@ python3 -m pip install -r requirements.txt
 threads="${1:-1000}"; threads="-t $threads"
 rpc="--rpc 1000"
 debug="--table"
-proxy="--proxies https://raw.githubusercontent.com/OleksandrBlack/ddoswarlist/main/proxies/RURUproxies.txt"
+#proxy="--proxies https://raw.githubusercontent.com/OleksandrBlack/ddoswarlist/main/proxies/RURUproxies.txt"
 
 while true
 do
