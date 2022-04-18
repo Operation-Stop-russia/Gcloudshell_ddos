@@ -4,7 +4,7 @@
 #mkdir dualshell
 #cd dualshell
 
-sudo grep -qxF 'set -g mouse on' ~/.tmux.conf || echo 'set -g mouse on' >> ~/.tmux.conf
+grep -qxF 'set -g mouse on' ~/.tmux.conf || echo 'set -g mouse on' >> ~/.tmux.conf
 tmux source-file ~/.tmux.conf
 
 git clone https://github.com/porthole-ascend-cinnamon/mhddos_proxy.git
