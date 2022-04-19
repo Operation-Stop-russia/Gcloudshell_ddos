@@ -1,7 +1,6 @@
 ## DDoS whith Google Cloud Shell (MHDDoS_proxy)
-#### Making script for durable cloudshell session
+#### Script for durable cloudshell session. Test
 #
-# ТЕСТ
 ### Використовуємо https://shell.cloud.google.com/?fromcloudshell=true&show=terminal
 
 ### Команди для запуску атаки
