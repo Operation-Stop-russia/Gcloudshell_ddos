@@ -16,8 +16,8 @@ curl -l https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos
 ```
 curl -l https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos/main/Start_dualShell.sh | bash
 ```
-У [Google Cloud Shell](https://shell.cloud.google.com/?fromcloudshell=true&show=terminal) в налаштуваннях бажано **вимкнути** статистику використання.    
-Дозволяється запускати до 4 терміналів на 1 акаунт але доцільніше використовувати 1-2 термінали на акаунт.    
+У [Google Cloud Shell](https://shell.cloud.google.com/?fromcloudshell=true&show=terminal) в налаштуваннях бажано **вимкнути статистику використання**.    
+Дозволяється запускати до 4 терміналів на 1 акаунт але **рекомендується 1 термінал на акаунт**.    
 Також враховуйте, що встановлені тижневі квоти на використання, 1 акаунт - 50 годин у звичайному режимі та 50 годин у ефемерному режимі (*до закінчення квоти у звичайному режимі - вмикаємо Ephemeral Mode (ставимо - "Завжди") та отримуємо ще 50 годин використання на поточний тиждень*)    
 **Для скидання Cloud Shell** - Видаліть усі файли з домашнього каталогу, команда: `sudo rm -rf $HOME`, далі - у меню Cloud Shell клацніть значок меню з трьома крапками, а потім натисніть "Restart". *Буде надано нову віртуальну машину, а домашній каталог буде відновлено до стану за замовчуванням.*
 #
