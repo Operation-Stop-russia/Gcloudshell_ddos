@@ -12,6 +12,7 @@ debug="--debug"
 while true
 do
    pkill -f runner.py 
+   sleep 18
    list_size=$(curl -s https://raw.githubusercontent.com/Operation-Stop-russia/targets_lists/main/L4t.lst | cat | grep "^[^#]" | wc -l)
    while [[ $list_size = "0"  ]]
       do
