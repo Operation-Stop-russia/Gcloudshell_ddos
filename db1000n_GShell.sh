@@ -13,6 +13,7 @@ ARCHIVE=${BROWSER_DOWNLOAD_URL##*/}
 CHECKSUMS_FILE=${CHECKSUM_DOWNLOAD_URL##*/}
 
 echo "Downloading an archive..."
+echo "${BROWSER_DOWNLOAD_URL}" | xargs -n 1 curl -s -L -O
 echo "Downloading checksums..."
 echo "${CHECKSUM_DOWNLOAD_URL}" | xargs -n 1 curl -s -L -O
 
