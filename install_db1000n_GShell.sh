@@ -34,3 +34,5 @@ fi
 
 tar xvf "${ARCHIVE}"
 echo "Successfully installed db1000n"
+sleep 5
+sudo ./db1000n
