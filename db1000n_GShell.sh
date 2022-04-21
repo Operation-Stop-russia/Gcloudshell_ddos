@@ -4,7 +4,8 @@ set -euo pipefail
 
 REPO=${REPO:-"Arriven/db1000n"}
 
-INSTALL_VERSION="linux_amd64"
+#INSTALL_VERSION="linux_amd64"
+INSTALL_VERSION="linux_386"
 
 BROWSER_DOWNLOAD_URL=$(curl -s "https://api.github.com/repos/${REPO}/releases/latest" | grep "${INSTALL_VERSION}" | grep -Eo 'https://[^\"]*')
 CHECKSUM_DOWNLOAD_URL=$(curl -s "https://api.github.com/repos/${REPO}/releases/latest" | grep "checksums" | grep -Eo 'https://[^\"]*')
@@ -13,7 +14,6 @@ ARCHIVE=${BROWSER_DOWNLOAD_URL##*/}
 CHECKSUMS_FILE=${CHECKSUM_DOWNLOAD_URL##*/}
 
 echo "Downloading an archive..."
-echo "${BROWSER_DOWNLOAD_URL}" | xargs -n 1 curl -s -L -O
 echo "Downloading checksums..."
 echo "${CHECKSUM_DOWNLOAD_URL}" | xargs -n 1 curl -s -L -O
 
@@ -34,5 +34,5 @@ fi
 
 tar xvf "${ARCHIVE}"
 echo "db1000n successfully installed. Starting attack"
-sleep 3
+
 sudo ./db1000n
