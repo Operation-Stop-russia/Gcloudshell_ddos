@@ -1,5 +1,5 @@
 #!/bin/bash
-#curl -l https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos/main/Start_dualShell.sh | bash
+#curl -L https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos/main/Start_dualShell.sh | bash
 
 #mkdir dualshell
 #cd dualshell
