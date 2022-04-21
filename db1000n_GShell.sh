@@ -33,6 +33,6 @@ else
 fi
 
 tar xvf "${ARCHIVE}"
-echo "Successfully installed db1000n. Starting attack"
-sleep 2
+echo "db1000n successfully installed. Starting attack"
+sleep 3
 sudo ./db1000n
