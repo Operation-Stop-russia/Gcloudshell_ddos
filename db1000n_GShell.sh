@@ -4,8 +4,7 @@ set -euo pipefail
 
 REPO=${REPO:-"Arriven/db1000n"}
 
-#INSTALL_VERSION="linux_amd64"
-INSTALL_VERSION="linux_386"
+INSTALL_VERSION="linux_amd64"
 
 BROWSER_DOWNLOAD_URL=$(curl -s "https://api.github.com/repos/${REPO}/releases/latest" | grep "${INSTALL_VERSION}" | grep -Eo 'https://[^\"]*')
 CHECKSUM_DOWNLOAD_URL=$(curl -s "https://api.github.com/repos/${REPO}/releases/latest" | grep "checksums" | grep -Eo 'https://[^\"]*')
@@ -34,5 +33,5 @@ fi
 
 tar xvf "${ARCHIVE}"
 echo "db1000n successfully installed. Starting attack"
-
+sleep 5
 sudo ./db1000n
