@@ -11,7 +11,7 @@ CHECKSUM_DOWNLOAD_URL=$(curl -s "https://api.github.com/repos/${REPO}/releases/l
 
 ARCHIVE=${BROWSER_DOWNLOAD_URL##*/}
 CHECKSUMS_FILE=${CHECKSUM_DOWNLOAD_URL##*/}
-tput bold; tput setaf 2
+
 echo "Downloading an archive..."
 echo "${BROWSER_DOWNLOAD_URL}" | xargs -n 1 curl -s -L -O
 echo "Downloading checksums..."
@@ -33,7 +33,7 @@ else
 fi
 
 tar xvf "${ARCHIVE}"
-tput setaf 3; tput setab 4; echo " db1000n  successfully  installed "
+tput bold; tput setaf 3; tput setab 4; echo " db1000n  successfully  installed "
 sleep 1
 tput setaf 4; tput setab 3; echo "Starting attack with using proxies"; tput setab 0; tput setaf 2
 sleep 3
