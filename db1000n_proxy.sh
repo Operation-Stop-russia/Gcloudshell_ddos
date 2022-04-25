@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 #curl -L https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos/main/db1000n_proxy.sh | bash
-tput bold; tput setaf 2
 set -euo pipefail
 
 REPO=${REPO:-"Arriven/db1000n"}
@@ -12,7 +11,7 @@ CHECKSUM_DOWNLOAD_URL=$(curl -s "https://api.github.com/repos/${REPO}/releases/l
 
 ARCHIVE=${BROWSER_DOWNLOAD_URL##*/}
 CHECKSUMS_FILE=${CHECKSUM_DOWNLOAD_URL##*/}
-
+tput bold; tput setaf 2
 echo "Downloading an archive..."
 echo "${BROWSER_DOWNLOAD_URL}" | xargs -n 1 curl -s -L -O
 echo "Downloading checksums..."
