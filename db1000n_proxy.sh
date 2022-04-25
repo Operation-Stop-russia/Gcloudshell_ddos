@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #curl -L https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos/main/db1000n_proxy.sh | bash
 set -euo pipefail
-
+tput bold; tput setaf 2
 REPO=${REPO:-"Arriven/db1000n"}
 
 INSTALL_VERSION="linux_amd64"
