@@ -35,4 +35,4 @@ fi
 tar xvf "${ARCHIVE}"
 echo "db1000n successfully installed. Starting attack"
 sleep 5
-sudo ./db1000n -proxy 'https://raw.githubusercontent.com/OleksandrBlack/proxy-scraper-checker/main/proxies/proxies_ru.txt'
+sudo ./db1000n -proxy '{{ join (split (get_url "https://raw.githubusercontent.com/OleksandrBlack/proxy-scraper-checker/main/proxies/proxies_ru.txt") "\n") "," }}' 
