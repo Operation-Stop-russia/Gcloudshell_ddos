@@ -33,7 +33,7 @@ else
 fi
 
 tar xvf "${ARCHIVE}"
-tput setaf 4 echo "db1000n successfully installed"
+tput setaf 4; echo "db1000n successfully installed"
 sleep 1
 tput setaf 3; echo "Starting attack with using proxies"; tput setaf 3; tput setab 4
 sleep 5
