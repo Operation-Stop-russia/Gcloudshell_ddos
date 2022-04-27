@@ -5,8 +5,8 @@ git clone https://github.com/porthole-ascend-cinnamon/mhddos_proxy.git
 cd mhddos_proxy
 python3 -m pip install -r requirements.txt
 
-threads="${1:-120}"; threads="-t $threads"
-rpc="--rpc 1000"
+threads="${1:-380}"; threads="-t $threads"
+rpc="--rpc 500"
 debug="--debug"
 
 while true
