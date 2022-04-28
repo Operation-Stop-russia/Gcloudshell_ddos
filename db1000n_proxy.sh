@@ -33,8 +33,8 @@ else
 fi
 
 tar xvf "${ARCHIVE}"
-tput bold; tput setaf 3; tput setab 4; echo " Operation "
-           tput setaf 6; tput setab 3; echo "Stop-russia"; tput sgr0; 
+tput bold; tput setaf 3; tput setab 4; echo "   Operation   "
+           tput setaf 4; tput setab 3; echo "  Stop russia  "; tput sgr0; 
 sleep 1
 tput bold; tput setaf 2; echo " db1000n  successfully  installed "
                          echo "Starting attack with using proxies"; tput setaf 7
