@@ -2,7 +2,7 @@
 cd mhddos_proxy
 
 threads="${1:-200}"; threads="-t $threads"
-rpc="--rpc 150"
+rpc="--rpc 100"
 debug="--debug"
 
 while true
