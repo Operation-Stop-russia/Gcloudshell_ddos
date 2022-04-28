@@ -6,7 +6,7 @@ cd mhddos_proxy
 python3 -m pip install -r requirements.txt
 
 threads="${1:-300}"; threads="-t $threads"
-rpc="--rpc 250"
+rpc="--rpc 200"
 debug="--debug"
 
 while true
