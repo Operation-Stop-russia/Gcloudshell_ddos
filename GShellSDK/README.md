@@ -1,4 +1,4 @@
-# GoogleShell через PuTTY 
+#### GoogleShell через PuTTY 
 (оптимальний алгоритм дій):
 Завантажуєте та встановлюєте GoogleCloudSDK
 - запускаєм Google Cloud SDK Shell і вводимо команду для ініціалізації " gcloud init " (перша аторизація через браузер...)
