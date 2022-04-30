@@ -40,8 +40,8 @@ curl -l https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos
 #
 #### Списки з цілями
 https://raw.githubusercontent.com/Operation-Stop-russia/targets_lists/main/L7m.lst    
-https://raw.githubusercontent.com/Operation-Stop-russia/targets_lists/main/L4t.lst    
 https://raw.githubusercontent.com/Operation-Stop-russia/targets_lists/main/L4_tcp.lst
+https://raw.githubusercontent.com/Operation-Stop-russia/targets_lists/main/AllTargets.lst
 #
 #
 [IT ARMY of Ukraine](https://t.me/itarmyofukraine2022)
