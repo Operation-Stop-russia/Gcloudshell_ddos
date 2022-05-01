@@ -9,6 +9,6 @@ while true
 do
    pkill -f runner.py
    sleep 5
-   python3 runner.py --itarmy -t 1000 --rpc 500 --debug
+   python3 runner.py --itarmy -t 1000 --rpc 200 --debug
 sleep 9m
 done
