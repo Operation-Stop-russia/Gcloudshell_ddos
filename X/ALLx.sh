@@ -8,7 +8,7 @@ python3 -m pip install -r requirements.txt
 while true
 do
    pkill -f runner.py
-   sleep 7
+   sleep 9
    python3 runner.py -c https://raw.githubusercontent.com/Operation-Stop-russia/targets_lists/main/AllTargets.lst --debug
 sleep 14m
 done
