@@ -8,7 +8,7 @@
     
 (*при повторних запусках, після команди `gcloud init` вводим `1` і обираємо потрібний акаунт або додаєм ті що не додали*)
 
-**Якщо використовуєте багато акаунтів, то після встановлення GoogleCloudSDK можна скористатись [gcloud_init.bat](https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos/main/GShellSDK/gcloud_init.bat) для додавання акаунтів та [start_sessions.bat](https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos/main/GShellSDK/start_sessions.bat) для запуску сесій.**
+**Якщо використовуєте багато акаунтів, то після встановлення GoogleCloudSDK можна скористатись [gcloud_init.bat](https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos/main/GShellSDK/gcloud_init.bat) для додавання акаунтів та для запуску сесій [start_sessions.bat](https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos/main/GShellSDK/start_sessions.bat) або [start_sessions_p.bat (*з паузою*)](https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos/main/GShellSDK/start_sessions_p.bat) або  [start_sessions_t.bat (*з таймаутом 10 сек*)](https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos/main/GShellSDK/start_sessions_t.bat).**
 #
 #
 #### Встановлення gcloud CLI (Linux):    
