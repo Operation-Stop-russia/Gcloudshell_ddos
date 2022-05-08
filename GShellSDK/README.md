@@ -1,6 +1,6 @@
 ## Google Cloud CLI
 #### GoogleShell через PuTTY (Windows): 
-- потрібно завантажити та встановити **[GoogleCloudSDK](https://github.com/Operation-Stop-russia/Gcloudshell_ddos/blob/main/GShellSDK/GoogleCloudSDKInstaller.exe)**
+- потрібно завантажити та встановити **[GoogleCloudSDK](https://dl.google.com/dl/cloudsdk/channels/rapid/GoogleCloudSDKInstaller.exe)**
 - запустити Google Cloud SDK Shell і ввести команду для ініціалізації `gcloud init` (*перша аторизація через браузер...*)
 - відмовитись від створення проекту вводимо `n`
 - далі команда для запуску сесії `gcloud cloud-shell ssh --authorize-session`
