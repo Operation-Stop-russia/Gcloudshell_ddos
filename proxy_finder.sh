@@ -5,4 +5,4 @@ git clone https://github.com/porthole-ascend-cinnamon/proxy_finder
 cd ~/proxy_finder
 python3 -m pip install -r requirements.txt
 
-python3 finder.py --threads 2000
+python3 finder.py --threads 5000
