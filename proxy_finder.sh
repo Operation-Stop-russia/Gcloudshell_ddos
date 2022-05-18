@@ -1,5 +1,5 @@
 #!/bin/bash
-#curl -l https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos/main/proxy_finder.sh | bash
+#curl -L https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos/main/proxy_finder.sh | bash
 rm -rf proxy_finder
 git clone https://github.com/porthole-ascend-cinnamon/proxy_finder
 cd ~/proxy_finder
