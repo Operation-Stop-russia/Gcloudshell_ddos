@@ -1,6 +1,7 @@
-## Google Cloud SDK
+## Google Cloud CLI
 #### Даний спосіб потребує значно меньше локальних ресурсів для підтримання сеансів. 
 #### Підходить для використання 30-60 акаунтів з 1 ПК, якщо маєте змогу задіяти більше акаунтів [Вам сюди](https://github.com/Operation-Stop-russia/CYBER_HAIL#readme)
+#### Тижнева квота на використання сервісу одним акаунтом - 60 годин
 #### GoogleShell через PuTTY (Windows): 
 - потрібно завантажити та встановити **[GoogleCloudSDK](https://dl.google.com/dl/cloudsdk/channels/rapid/GoogleCloudSDKInstaller.exe)**
 - запустити Google Cloud SDK Shell і ввести команду для ініціалізації `gcloud init` (*перша аторизація через браузер...*)
