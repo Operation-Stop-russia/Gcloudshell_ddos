@@ -1,5 +1,7 @@
-## [DDoS whith Google Cloud Shell](https://sites.google.com/view/operationrussia/googleshell)
-#### Scripts for durable cloudshell session. Test!
+# [DDoS whith Google Cloud Shell](https://sites.google.com/view/operationrussia/googleshell)
+#### Scripts for durable cloudshell session. Test!     
+#    
+**[English version](https://github.com/Operation-Stop-russia/Gcloudshell_ddos/blob/main/README-EN.md)**
 #
 ### Використовуємо https://shell.cloud.google.com/?fromcloudshell=true&show=terminal
 ### з ПК та смартфонів (*зі всього, що має браузер*;)
