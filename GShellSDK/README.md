@@ -1,4 +1,6 @@
 ## Google Cloud CLI
+**[English version](https://github.com/Operation-Stop-russia/Gcloudshell_ddos/blob/main/GShellSDK/README-EN.md)**
+#
 #### Даний спосіб потребує значно меньше локальних ресурсів для підтримання сеансів. 
 #### Підходить для використання 30-60 акаунтів з 1 ПК, якщо маєте змогу задіяти більше акаунтів [Вам сюди](https://github.com/Operation-Stop-russia/CYBER_HAIL#readme)
 #### Тижнева квота на використання сервісу одним акаунтом - 60 годин
