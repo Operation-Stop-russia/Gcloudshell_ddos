@@ -7,7 +7,7 @@
 #### Browser mode (*suitable for use 1 to 20-30 accounts from one PC, if more - [here](https://github.com/Operation-Stop-russia/Gcloudshell_ddos/tree/main/GShellSDK#readme)*)
 :exclamation:• **It is recommended to use 1 terminal per account**.    
 :exclamation:• **GShell sessions are capped at 12 hours. You can start a new session immediately after terminate**    
-:exclamation:• Please note that **Weekly usage quotas, 1 account - 50 hours in normal mode and up to 50 hours in ephemeral mode** (*until the quota expires in the default mode - turn on the ephemeral mode (set - "Always") and get up to 50 hours of use during the current week*)    
+:exclamation:• Please note that **Weekly usage quotas, 1 account - 50 hours in normal mode and up to 50 hours in ephemeral mode** (*until the quota expires in the default mode - turn on the ephemeral mode (set - "Always") and get up to 10-50 hours of use during the current week*)    
 :exclamation:• In [Google Cloud Shell](https://shell.cloud.google.com/?fromcloudshell=true&show=terminal) you can disable usage statistics in settings.    
 • **To restore Cloud Shell** - remove all files from your home directory, command: `sudo rm -rf $HOME`, after - in the Cloud Shell menu, click the three dots menu icon, then click "Restart" *(A new VM will be provisioned and the home directory will be restored to its default state)*
 #
