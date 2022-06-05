@@ -8,7 +8,7 @@ python3 -m pip install -r requirements.txt
 threads="${1:-1000}"; threads="-t $threads"
 rpc="--rpc 350"
 debug="--debug"
-vpn="--vpn 1"
+vpn="--vpn 5"
 
 while true
 do
