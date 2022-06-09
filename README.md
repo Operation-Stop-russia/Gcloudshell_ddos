@@ -24,7 +24,7 @@ curl -L https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos
 ``` 
 :white_check_mark:**Команда для встановлення та запуску mhddos_proxy** (*попередня менш продуктивна версія (**тільки проксі**)*):
 ```
-curl -L https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos/main/Start_L7m(proxy_only).sh | bash
+curl -L https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos/main/Start_L7m-proxy_only.sh | bash
 ```
 #
 ### Тести/допрацювання/експерименти. 
