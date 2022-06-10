@@ -1,7 +1,7 @@
 #!/bin/bash
 #curl -L https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos/main/L7_test_limit-dns-concurrency.sh | bash
 rm -rf mhddos_proxy
-git clone https://github.com/porthole-ascend-cinnamon/mhddos_proxy/tree/limit-dns-concurrency/mhddos_proxy.git
+git clone -b limit-dns-concurrency --single-branch https://github.com/porthole-ascend-cinnamon/mhddos_proxy.git
 cd mhddos_proxy
 python3 -m pip install -r requirements.txt
 
