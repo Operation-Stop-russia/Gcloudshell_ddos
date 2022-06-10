@@ -5,7 +5,7 @@ git clone -b limit-dns-concurrency --single-branch https://github.com/porthole-a
 cd mhddos_proxy
 python3 -m pip install -r requirements.txt
 
-threads="-t 600"
+threads="-t 500"
 rpc=""
 debug=""
 vpn="--vpn"
