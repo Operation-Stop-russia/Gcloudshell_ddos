@@ -7,7 +7,7 @@ python3 -m pip install -r requirements.txt
 
 threads="-t 600"
 rpc=""
-debug="--debug"
+debug=""
 vpn="--vpn"
 
 while true
