@@ -5,10 +5,10 @@ git clone https://github.com/porthole-ascend-cinnamon/mhddos_proxy.git
 cd mhddos_proxy
 python3 -m pip install -r requirements.txt
 
-threads="-t 500"
-rpc=""
+threads="-t 2000"
+rpc="350"
 debug=""
-vpn="--vpn 5"
+vpn="--vpn 3"
 
 while true
 do
