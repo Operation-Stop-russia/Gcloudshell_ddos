@@ -4,7 +4,7 @@
 ### Використовуємо https://shell.cloud.google.com/?fromcloudshell=true&show=terminal
 ### з ПК та смартфонів (*зі всього, що має браузер*;)
 #
-#### Браузерний спосіб (*підходить для використання від 1 до 20-30 акаунтів з одного ПК, якщо більше [Вам сюди](https://github.com/Operation-Stop-russia/Gcloudshell_ddos/tree/main/GShellSDK#readme)*)
+#### Браузерний спосіб (*підходить для використання від 1 до 20 акаунтів з одного ПК, якщо більше [Вам сюди](https://github.com/Operation-Stop-russia/Gcloudshell_ddos/tree/main/GShellSDK#readme)*)
 :exclamation:• **Рекомендується використовувати 1 термінал на акаунт**.    
 :exclamation:• **Максимальна тривалість сеансу Cloud Shell - 12 годин. Новий сеанс можна почати одразу після розриву.**    
 :exclamation:• Враховуйте, що встановлені **тижневі квоти на використання, 1 акаунт - 50 годин у звичайному режимі та від 10 до 50 годин у ефемерному режимі** (*до закінчення квоти у звичайному режимі - вмикаємо Ephemeral Mode (ставимо - "Завжди") та отримуємо ще до 50 годин використання на поточний тиждень. Або навпаки, краще починати з ефемерного режиму*)    
@@ -36,6 +36,7 @@ curl -L https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos
 ```
 sudo docker run -it --rm  --cpus="0.5" ghcr.io/opengs/uashield:master --workers=256 --withProxy=true
 ```
+#
 #
 ### Тести/допрацювання/експерименти. 
 **Нестабільні сеанси, перериваються** (потрібно часто перевіряти)      
